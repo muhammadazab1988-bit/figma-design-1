@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 56px;
+  position: relative;
+
+  .container {
+    width: 1110px;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    img {
+      width: 145.5px;
+      max-width: 40%;
+    }
+
+    nav {
+      display: flex;
+      gap: 32px;
+      @media screen and (max-width: 767px) {
+        display: none; 
+        @media screen and (min-width : 768px) and (max-width : 992px) {
+        display: none;
+      }
+      }
+
+      a {
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 13px;
+        line-height: 145%;
+        letter-spacing: 0px;
+        color: #242d52;
+      }
+    }
+
+    button {
+      width: 137px;
+      border-radius: 22px;
+      background-color: #f3603c;
+      box-shadow: 0px 15px 15px -10px #ff9f8e;
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 145%;
+      letter-spacing: 0px;
+      vertical-align: middle;
+      color: #ffffff;
+      padding: 16px 32px;
+      border: 0;
+
+      @media screen and (max-width: 767px) {
+        display: none; 
+      }
+      @media screen and (min-width : 768px) and (max-width : 992px) {
+        display: none;
+      }
+    }
+  }
+  #rect {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+  }
+}
